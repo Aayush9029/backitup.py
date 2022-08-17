@@ -11,7 +11,7 @@ BREW_OUT = os.path.join(BACKUP_DIR, "brew.out")
 ZSHRC = os.path.expanduser('~/.zshrc')
 # OHMYZSH = os.path.expanduser('~/.oh-my-zsh')
 VIMRC = os.path.expanduser('~/.vimrc')
-VIMFOLDER = os.path.expanduser('~/.vim')
+# VIMFOLDER = os.path.expanduser('~/.vim')
 SSHFOLDER = os.path.expanduser('~/.ssh')
 POWER10KZSH = os.path.expanduser('~/.p10k.zsh')
 GITCONFIG = os.path.expanduser('~/.gitconfig')
@@ -20,7 +20,7 @@ RAYCAST = os.path.expanduser('~/Documents/configs/raycast')
 STREAMLINK_CONFIG = os.path.expanduser('~/.config/streamlink')
 
 
-all_dirs = [BACKUP_SCRIPT, ZSHRC, VIMRC, VIMFOLDER,
+all_dirs = [BACKUP_SCRIPT, ZSHRC, VIMRC,
             SSHFOLDER, POWER10KZSH, GITCONFIG, GITIGNORE, RAYCAST, STREAMLINK_CONFIG]
 
 
