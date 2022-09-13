@@ -26,13 +26,13 @@ all_dirs = [BACKUP_SCRIPT, ZSHRC, VIMRC,
 
 #  Brew Helpers
 def get_brew_leaves():
-    command = "brew leaves | xargs -n1 brew desc"
+    command = "brew leaves | xargs -n1 brew desc --eval-all"
     brew_leaves = os.popen(command).read().splitlines()
     return brew_leaves
 
 
 def get_brew_casks():
-    command = "brew list --casks| xargs -n1 brew desc"
+    command = "brew list --casks| xargs -n1 brew desc --eval-all"
     brew_casks = os.popen(command).read().splitlines()
     return brew_casks
 
